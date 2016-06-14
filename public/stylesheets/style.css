@@ -1,0 +1,137 @@
+body {
+  padding: 50px;
+  font: 16px  Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+a 
+{
+  color: #00B7FF;
+}
+
+h1
+{
+  margin:1px;
+  font-size:18px;
+  color:#555;
+}
+
+td.label
+{
+
+  color:#555;
+}
+
+.login
+{
+  padding:150px;
+  border-radius:2px;
+  border:1px solid #ccc;
+  text-align: center;
+  background: url(../images/chat.png) no-repeat center #f7f7f7;
+  width:230px;
+}
+
+input
+{
+  color: #333;
+  border-radius:2px;
+  border:1px solid #bbb;
+  padding:3px;
+}
+
+
+input.user, input.password
+{
+  width:130px;
+  font-size: 16px;
+}
+
+button
+{
+  padding:10px 15px 10px 15px;
+  font-size:16px;
+  background-color:#A8DDFF;
+  border-radius:3px;
+  border:1px solid #8AB5CE;
+  cursor:pointer;
+  box-shadow: 2px 2px 5px -2px rgba(0,0,0,0.75);
+}
+
+button.small
+{
+  padding:2px 10px 2px 10px;
+}
+
+button:hover
+{
+  background-color:#77C6FF;
+}
+
+.panel
+{
+    border-radius:2px;
+    border:1px solid #ccc;
+    box-shadow: 2px 2px 5px -2px rgba(0,0,0,0.75);
+}
+
+.rooms
+{
+  display:inline-block;
+  width:200px;
+  overflow-y: auto;
+  height:400px;
+  vertical-align: top;
+  padding:10px;
+  margin-right:5px;
+}
+
+.room
+{
+  display:inline-block;
+  width:600px;
+  height:400px;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.roomList
+{
+  list-style: none;
+  margin:0px;
+  padding-left: 5px;
+}
+
+.roomList li
+{
+  margin:2px;
+  padding: 4px;
+  border-radius:2px;
+  cursor:pointer;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select:none;
+}
+
+.roomList li:hover
+{
+  background-color:#eee;
+}
+
+.roomList li.selected
+{
+  background-color:#E26565;
+  color:#FFF;
+  cursor:default;
+}
+
+.conversation
+{
+  height: 300px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  margin-bottom:10px;
+  overflow-y: auto;
+}
+

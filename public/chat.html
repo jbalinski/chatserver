@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head>
+<title>Chat Server</title>
+<link rel="stylesheet" href="/stylesheets/style.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.6/socket.io.min.js" type="text/javascript"></script>
+<script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+<script src="/javascripts/chat.js"></script>
+
+</head>
+<body>
+    <div style="width:1000px;">
+        <div class="panel rooms">
+            <h1>New Room:</h1>
+            <input type="text" id="txtNewRoom" style="width:140px;"> <button id="btnNewRoom" class="small">Go</button>
+            <hr/>
+            <h1>Active Chat Rooms</h1>
+            <ul id="lstRooms" class="roomList"></ul>
+        </div>
+        <div class="panel room">
+            <h1 id="roomName">...</h1>
+            <div class="pnlChat" style="">
+                <div class="conversation" id="pnlConversation">
+                </div>
+                <input type="text" id="txtMessage" style="width:525px;">
+                <button id="btnSend" class="small">Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
