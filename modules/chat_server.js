@@ -89,9 +89,4 @@ module.exports = function(io)
             io.emit("updateRooms", rooms);
         }
     });
-
-    io.on('message', function(client,message, next)
-    {
-        io.to(client.rooms[0]).emit("chat", {user: "Jonathan", message: message});
-    });
 };
